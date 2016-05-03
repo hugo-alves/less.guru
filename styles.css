@@ -118,10 +118,29 @@ button:hover{
   padding: 10px;
   font-size: 96px;
 }
-
+#results span{
+  font-weight: bold;
+}
 .reduce-container{
-  line-height: 1.5;
-  font-size: 40px;
-  margin-top: 30px;
+  display: flex;
+  flex-flow: column;
+  font-size: 30px;
+  margin-top: 15px;
+  line-height:32px;
   /*margin-bottom: 90px;*/
+}
+.reduce-container .reduceBy-container{
+  display: flex;
+  justify-content: center;
+}
+.reduce-container .reduceBy-container input{
+  height: 30px;
+  margin: 0 10px;
+}
+.reduce-container #savings{
+  line-height: 1.5;
+  display: none;
+}
+.reduce-container #savings span{
+  font-weight: bold;
 }

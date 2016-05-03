@@ -58,14 +58,21 @@
     </div>
     <div id="results">
       <div class="day">Each cigarette costs you <span id="day"></span> </div>
-      <div class="year">Per year you spend <span id="year"></span>€</div>
+      <div class="year">Each year you spend <span id="year"></span>€</div>
       <div class="life">Until the end of you life you'll spend <span id="life"></span>€</div>
       <button onclick="recalculate()"> Recalculate</button>
       <div class="reduce-container">
-        If you reduce by
-        <input id="reduceBy" type="text" value="0"/ oninput="savings()"> cigarettes per day:
-        <br /> you'll save <span id="saveYear"></span>€ per year. <br />
-        And <span id="saveLife"></span>€ in you lifetime.
+        <div class="reduceBy-container">
+          <div class="value"> If you reduce by</div>
+          <input id="reduceBy" type="text" value="0"/ oninput="savings()">
+          <div class="value">cigarettes per day...</div>
+        </div>
+        <div id="savings">
+            You'll save <span id="saveYear"></span>€ per year.<br />
+            And <span id="saveLife"></span>€ in you lifetime.
+        </div>
+
+
       </div>
     </div>
   </div>
