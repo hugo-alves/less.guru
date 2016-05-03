@@ -69,7 +69,7 @@ function savings(){
           var pricePerLife = pricePerYear * (73 - age);
           var savePerLife = saveYear * (73 - age);
         }
-
+    document.getElementById('savings').style.display = 'block';
     $('#saveLife').animateNumber({number: savePerLife});
     $('#saveYear').animateNumber({number: savePerYear});
   }
