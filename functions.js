@@ -10,7 +10,7 @@ var saveLife;
 var savePerLife;
 var saveYear;
 var savePerYear;
-​
+
 function calculate(){
   var boxPrice = document.getElementById('boxPrice').value;
   var cigarsPerDay = document.getElementById('cigarsPerDay').value;
@@ -32,15 +32,15 @@ function calculate(){
         var pricePerLife = pricePerYear * (73 - age);
         var savePerLife = saveYear * (73 - age);
       }
-​
-​
+
+
       $('#year').animateNumber({ number: pricePerYear });
       $('#life').animateNumber({number: pricePerLife});
-​
+
       document.getElementById('form').style.display = 'none';
       document.getElementById('results').style.display = 'block';
       document.getElementById('day').innerHTML = pricePerCigar +"€";
-​
+
 };
 function recalculate(){
   document.getElementById('form').style.display = 'block';
@@ -69,7 +69,7 @@ function savings(){
           var pricePerLife = pricePerYear * (73 - age);
           var savePerLife = saveYear * (73 - age);
         }
-​
+
     $('#saveLife').animateNumber({number: savePerLife});
     $('#saveYear').animateNumber({number: savePerYear});
   }
