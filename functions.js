@@ -38,7 +38,7 @@ function calculate(){
       $('#life').animateNumber({number: pricePerLife});
 
       document.getElementById('form').style.display = 'none';
-      document.getElementById('results').style.display = 'block';
+      document.getElementById('results').style.display = 'flex';
       document.getElementById('day').innerHTML = pricePerCigar +"€";
 
 };
@@ -70,6 +70,7 @@ function savings(){
           var savePerLife = saveYear * (73 - age);
         }
     document.getElementById('savings').style.display = 'block';
+    document.getElementById('restart').style.display = 'block';
     $('#saveLife').animateNumber({number: savePerLife});
     $('#saveYear').animateNumber({number: savePerYear});
   }

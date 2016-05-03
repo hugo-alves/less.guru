@@ -1,7 +1,6 @@
 
 body{
   margin: 0;
-  background-color: #447691;
   font-family: sans-serif;
 
 }
@@ -16,6 +15,13 @@ header{
   flex-grow: 1;
   align-items: : center;
   border-bottom: solid 1px #447691;
+}
+html { 
+  background: url(assets/smoke.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 header img{
@@ -41,6 +47,7 @@ header .title{
   padding: 15px 25px;
   height: 100%;
   background-color: white;
+  border-radius: 4px;
 
 }
 .form-container .title{
@@ -95,16 +102,31 @@ button{
 button:hover{
   opacity: 0.7;
 }
+button.restart{
+  border-radius: 2px;
+  background-color: #6caee0;
+  color: #ffffff;
+  font-weight: bold;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  padding: 14px 22px;
+  border: 0;
+  margin-top: 15px;
+  cursor: pointer;
+  max-width: 100px;
+  display: none;
+}
 .results-container{
   display: none;
 }
 
 #results{
+  flex-flow: column;
   display: none;
   padding: 0 25px;
   font-weight: lighter;
   color: white;
   text-align: center;
+  justify-content: center;
 }
 #results .day{
   padding: 10px;
@@ -127,6 +149,7 @@ button:hover{
   font-size: 40px;
   margin-top: 15px;
   line-height:40px;
+  align-items: center;
   /*margin-bottom: 90px;*/
 }
 .reduce-container .reduceBy-container{
