@@ -1,39 +1,46 @@
-
+html {
+  background: url(assets/photo_bg.jpg);
+  background-repeat:no-repeat;
+  background-size:100%;
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+  overflow-y: hidden;
+}
 body{
+
   margin: 0;
   font-family: sans-serif;
 
 }
 header{
   width: 100%;
-  position: fixed;
-  top: 0;
+  margin-top: 75px;
   left:0;
   padding: 10px 25px;
-  background-color: #fff;
   display: flex;
   flex-grow: 1;
-  align-items: : center;
-  border-bottom: solid 1px #447691;
+
+
 }
-html { 
-  background: url(assets/smoke.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 
 header img{
   padding: 5px;
+  width: 147px;
+  height: 84px;
 }
 header .title{
-  flex-grow: 1;
+  /*flex-grow: 1;*/
+  margin-left: 150px;
+  margin-right: 175px;
   color: #00839C;
-  font-size: 24px;
+  font-size: 18px;
   font-family: sans-serif;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-weight: lighter;
 }
 

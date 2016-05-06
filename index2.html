@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tobacco makes you poor.</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles2.css">
+  <script src="jquery-1.12.3.min.js"></script>
+  <script src="aishek-jquery-animateNumber-5f436e7 2/jquery.animateNumber.min.js"></script>
+  <script src="functions.js"></script>
+</head>
+
+<body>
+  <header>
+    <img src="assets/header.png" />
+  </header>
+  <div class="content">
+    <div class="left-container">
+      <div class="title">
+        let's
+        <br /> empower
+        <br /> smart
+        <br /> smokers
+      </div>
+
+
+    </div>
+
+    <div class="form-container" id="form">
+      <img src="assets/less_logo.png" alt="less_logo" />
+      <div id="inputs-container">
+        <div class="title">Too much money,sure.</div>
+        <div class="subtitle"> BUT HOW MUCH REALLY?</div>
+        <div class="input-container">
+          <div class="question">
+            How much does a cigarette pack cost?
+          </div>
+          <input type="text" id="boxPrice" value="4.20" />
+        </div>
+        <div class="input-container">
+          <div class="question">
+            How many cigarettes do you smoke per day?
+          </div>
+          <input type="text" id="cigarsPerDay" value="17" />
+        </div>
+
+        <div class="input-container row">
+          <div class="container">
+            <div class="question">How old are you? </div>
+            <input type="text" id="age" value="35" />
+          </div>
+          <div class="container gender">
+            <div class="gender">
+              <div class="question">Female </div>
+              <div class="icon female" onclick="getGender('female')"></div>
+            </div>
+            <div class="gender">
+              <div class="question">Male </div>
+              <div class="icon male" onclick="getGender('male')"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-container">
+          <button onclick="calculate()"> Calculate</button>
+        </div>
+      </div>
+      <div id="results">
+
+        <div class="day">Each cigarette costs you </div>
+        <span id="day"></span>
+        <div class="row">
+          <div class="year">Per year you spend
+            <div class="row" style="margin-top:0">
+              <span id="year"></span><span>€</span>
+            </div>
+
+          </div>
+          <div class="life">
+            Until the end of you life you'll spend
+            <div class="row" style="margin-top:0">
+              <span id="life"></span><span>€</span>
+
+            </div>
+
+          </div>
+        </div>
+        <button class="restart" id="restart" onclick="recalculate()">
+          <span style="font-size: 20px;">Re</span>start</button>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="reduce-container" id="reduceContainer">
+    <div class="reduceBy-container">
+      <div class="value"> If you reduce</div>
+      <input id="reduceBy" type="text" value="1" / oninput="savings()">
+      <div class="value">cigarettes per day...</div>
+    </div>
+    <div id="savings">
+      You'll save
+      <br /><span id="saveYear"></span><span>€</span>
+      <br />per year.
+
+    </div>
+    <div id="savings">
+      And
+      <br /><span id="saveLife"></span><span>€</span>
+      <br />in you lifetime.
+    </div>
+
+  </div>
+
+
+  </div>
+
+</body>
+
+</html>
