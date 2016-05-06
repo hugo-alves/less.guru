@@ -117,9 +117,7 @@ header img {
   cursor: pointer;
   outline: none;
 }
-button.restart{
-  margin-top: 250px !important;
-}
+
 #results {
   flex-flow: column;
   display: none;
