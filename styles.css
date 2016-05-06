@@ -118,6 +118,17 @@ header img {
   outline: none;
 }
 
+.reduce-container button {
+  margin-top: 50px;
+  border: none;
+  font-size: 20px;
+  background-color: transparent;
+  color: #00839c;
+  font-family: Titillium;
+  cursor: pointer;
+  outline: none;
+}
+
 #results {
   flex-flow: column;
   display: none;
@@ -161,7 +172,7 @@ header img {
   font-family: TitilliumLight;
   position: absolute;
   left: 0;
-  bottom: 150px;
+  bottom: 100px;
 }
 .reduce-container input {
   width: 56px;
@@ -186,7 +197,7 @@ header img {
   font-size: 34px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
 .content .form-container{
     padding: 0 25px;
   }
@@ -203,6 +214,7 @@ header img {
     position: initial;
     flex-flow: column;
     bottom: 0;
+    bottom: 50px;
   }
   .reduceBy-container{
     margin-left: 30px;
