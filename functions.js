@@ -1,7 +1,7 @@
 var boxPrice;
 var cigarsPerDay;
 var age;
-var gender = "female";
+var gender = "male";
 var pricePerDay;
 var pricePerYear;
 var reduceBy = 1;
@@ -11,9 +11,9 @@ var savePerLife;
 var saveYear;
 var savePerYear;
 $(document).ready(function() {
-  if(gender == "female"){
-    $('.female').addClass('active');
-    $('.male').removeClass('active');
+  if(gender == "male"){
+    $('.male').addClass('active');
+    $('.female').removeClass('active');
   }
 });
 
@@ -31,7 +31,7 @@ function getGender(value){
 
 function calculate(){
 
-  var boxPrice = document.getElementById('boxPrice').value;
+  var boxPrice = document.getElementById('boxPrice').value.replace(",",".");
   var cigarsPerDay = document.getElementById('cigarsPerDay').value;
   var age = document.getElementById('age').value;
   var reduceBy = document.getElementById('reduceBy').value;
@@ -73,7 +73,7 @@ function savings(){
     var reduceBy = document.getElementById('reduceBy').value;
     console.log(reduceBy);
   if(reduceBy != ""){
-    var boxPrice = document.getElementById('boxPrice').value;
+    var boxPrice = document.getElementById('boxPrice').value.replace(",",".");
     var cigarsPerDay = document.getElementById('cigarsPerDay').value;
     var age = document.getElementById('age').value;
     var reduceBy = document.getElementById('reduceBy').value;
