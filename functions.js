@@ -3,6 +3,7 @@ var cigarsPerDay;
 var age;
 var gender = "male";
 var pricePerDay;
+var pricePerMonth;
 var pricePerYear;
 var reduceBy = 1;
 var saveCigar;
@@ -53,7 +54,7 @@ function calculate(){
         var savePerLife = saveYear * (73 - age);
       }
 
-
+      $('#month').animateNumber({ number: pricePerMonth });
       $('#year').animateNumber({ number: pricePerYear });
       $('#life').animateNumber({number: pricePerLife});
 
@@ -61,6 +62,8 @@ function calculate(){
       document.getElementById('results').style.display = 'flex';
       document.getElementById('reduceContainer').style.display = 'flex';
       document.getElementById('day').innerHTML = pricePerCigar +"€";
+      document.getElementById('month').innerHTML = pricePerMonth +"€";
+
       savings();
 
 };
@@ -80,6 +83,7 @@ function savings(){
       var pricePerDay = pricePerCigar * cigarsPerDay;
       var saveCigar = (pricePerCigar * (cigarsPerDay - reduceBy));
       var pricePerCigar = ((boxPrice * 100) / 20 ) / 100;
+      var pricePerMonth =  pricePerCigar * cigarsPerDay * 30;
       var pricePerYear =  pricePerCigar * cigarsPerDay * 365;
       var saveYear = pricePerCigar * (cigarsPerDay - reduceBy) * 365;
       var savePerYear = pricePerYear - saveYear;

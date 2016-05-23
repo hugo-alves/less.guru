@@ -154,8 +154,13 @@ header img {
   flex-flow: row;
   margin-top: 35px;
 }
-#results .year {
+#results .month {
   margin-top: 100px;
+  margin-right: 50px;
+
+}
+
+#results .year {
   margin-right: 50px;
 }
 #results .life {
