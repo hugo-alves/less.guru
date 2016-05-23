@@ -10,6 +10,18 @@
   <script src="jquery-1.12.3.min.js"></script>
   <script src="aishek-jquery-animateNumber-5f436e7 2/jquery.animateNumber.min.js"></script>
   <script src="functions.js"></script>
+
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+<script>
+function showMailingPopUp() {
+    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us4.list-manage.com","uuid":"555bb9cad7ff72af1ffb50bc3","lid":"fc04050a72"}) })
+    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+};
+
+document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+</script>
+
 </head>
 
 <body>
@@ -37,19 +49,19 @@
           <div class="question">
             How much does a cigarette pack cost?
           </div>
-          <input type="text" id="boxPrice" value="" />
+          <input type="text" id="boxPrice" value="4.6" />
         </div>
         <div class="input-container">
           <div class="question">
             How many cigarettes do you smoke per day?
           </div>
-          <input type="text" id="cigarsPerDay" value="" />
+          <input type="text" id="cigarsPerDay" value="15" />
         </div>
 
         <div class="input-container row">
           <div class="container">
             <div class="question">How old are you? </div>
-            <input type="text" id="age" value="" />
+            <input type="text" id="age" value="35" />
           </div>
           <div class="container gender">
             <div class="gender">
@@ -94,7 +106,7 @@
   <div class="reduce-container" id="reduceContainer">
     <div class="reduceBy-container">
       <div class="value"> If you reduce</div>
-      <input id="reduceBy" type="text" value="1" / oninput="savings()">
+      <input id="reduceBy" type="text" value="3" / oninput="savings()">
       <div class="value">cigarettes per day...</div>
     </div>
     <div id="savings">
@@ -108,8 +120,8 @@
       <br /><span id="saveLife"></span><span>€</span>
       <br />in you lifetime.
     </div>
-      <button class="restart" id="restart" onclick="recalculate()">
-        <span style="font-size: 20px;">Re</span>start
+      <button class="restart" id="open-popup" onclick="showMailingPopUp()">
+        <span style="font-size: 20px;">Restart</span>
       </button>
 
 
