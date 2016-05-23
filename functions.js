@@ -41,6 +41,7 @@ function calculate(){
     var saveCigar = (pricePerCigar * (cigarsPerDay - reduceBy));
     var pricePerCigar = Math.round((((boxPrice * 100) / 20 ) / 100) * 100) / 100;
     var pricePerYear =  pricePerCigar * cigarsPerDay * 365;
+    var pricePerMonth =  pricePerCigar * cigarsPerDay * 30;
     var saveYear = pricePerCigar * (cigarsPerDay - reduceBy) * 365;
     var savePerYear = pricePerYear - saveYear;
      if(gender == 'male'){

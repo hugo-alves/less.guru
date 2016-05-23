@@ -119,11 +119,11 @@ header img {
 }
 
 .reduce-container button {
-  margin-top: 50px;
+  /*margin-top: 50px;*/
   border: none;
   font-size: 20px;
   background-color: transparent;
-  color: #00839c;
+  color: #ff958c;
   font-family: Titillium;
   cursor: pointer;
   outline: none;
@@ -143,22 +143,25 @@ header img {
 #results .day {
   margin-top: 100px;
   font-family: TitilliumLight;
+  display: none;
 }
 #results span#day {
   font-family: TitilliumLight;
+  display: none;
 }
 #results .row {
   display: flex;
   flex-flow: row;
   margin-top: 35px;
 }
-#results .row .year {
+#results .year {
+  margin-top: 100px;
   margin-right: 50px;
 }
-#results .row .life {
+#results .life {
   font-family: TitilliumLight;
 }
-#results .row .year, #results .row .life {
+#results .year, #results .life {
   display: flex;
   flex-flow: column;
 }
@@ -207,9 +210,11 @@ header img {
   .content .form-container button{
     margin-top: 25px !important;
   }
+
   .left-container {
     display: none !important;
   }
+
   .reduce-container{
     position: initial;
     flex-flow: column;
@@ -219,3 +224,10 @@ header img {
   .reduceBy-container{
     margin-left: 30px;
   }
+  .reduce-container button {
+    display: block;
+    text-align: left;
+    margin: 0 30px;
+
+  }
+}
