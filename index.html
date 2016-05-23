@@ -10,17 +10,8 @@
   <script src="jquery-1.12.3.min.js"></script>
   <script src="aishek-jquery-animateNumber-5f436e7 2/jquery.animateNumber.min.js"></script>
   <script src="functions.js"></script>
+  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
 
-<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-
-<script>
-function showMailingPopUp() {
-    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us4.list-manage.com","uuid":"555bb9cad7ff72af1ffb50bc3","lid":"fc04050a72"}) })
-    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-};
-
-document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
-</script>
 
 </head>
 
@@ -120,8 +111,11 @@ document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
       <br /><span id="saveLife"></span><span>€</span>
       <br />in you lifetime.
     </div>
-      <button class="restart" id="open-popup" onclick="showMailingPopUp()">
+      <button class="restart" id="restart" onclick="recalculate()">
         <span style="font-size: 20px;">Restart</span>
+      </button>
+      <button class="restart" id="open-popup">
+        <span style="font-size: 30px;">Start smoking less</span>
       </button>
 
 

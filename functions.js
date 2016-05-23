@@ -71,7 +71,6 @@ function recalculate(){
 };
 function savings(){
     var reduceBy = document.getElementById('reduceBy').value;
-    console.log(reduceBy);
   if(reduceBy != ""){
     var boxPrice = document.getElementById('boxPrice').value.replace(",",".");
     var cigarsPerDay = document.getElementById('cigarsPerDay').value;
@@ -97,3 +96,16 @@ function savings(){
     $('#saveYear').animateNumber({number: savePerYear});
   }
 };
+
+
+
+function showMailingPopUp() {
+    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us4.list-manage.com","uuid":"555bb9cad7ff72af1ffb50bc3","lid":"fc04050a72"}) })
+    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+    window.onload = function(){ 
+      document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+    };
+
+};
+
+
