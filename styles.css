@@ -210,6 +210,11 @@ header img {
   color: #ff958c;
   font-size: 30px;
 }
+
+.mc-field-group {
+  font-size: 20px;
+  line-height: 1.5;
+}
 @media (max-width: 600px) {
 .content .form-container{
     padding: 0 25px;
