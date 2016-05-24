@@ -204,7 +204,12 @@ header img {
   color: #ff958c;
   font-size: 34px;
 }
-
+#mc_embed_signup_scroll h2 {
+  margin-top: 40px;
+  margin-right: 100px;
+  color: #ff958c;
+  font-size: 30px;
+}
 @media (max-width: 600px) {
 .content .form-container{
     padding: 0 25px;
